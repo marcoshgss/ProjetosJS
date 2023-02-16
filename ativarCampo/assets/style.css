@@ -26,7 +26,26 @@ body {
     align-items: center;
     margin-top: 1%;
 }
+.containe-2 input {
+    width: 2rem;
+    height: 3vh;
+}
+
+.containe-2 label {
+    color: #5d88d8;
+    font-size: 21px;
+}
 
 input {
     margin-left: 20px;
 }
+
+.containe input {
+    width: 25%;
+    height: 7vh;
+    border-radius: 7px;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+}
+

@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url("/ativarCampo/img/forms38.JPG");
+    background-color: #070708;
     font-family: sans-serif;
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 .containe-2 label {
-    color: #5d88d8;
+    color: #20EA16;
     font-size: 21px;
 }
 

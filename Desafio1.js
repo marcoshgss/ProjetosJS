@@ -106,3 +106,22 @@ for (let i = 0; i < 8; i++) {
 for (let i = 0; i <= 2; i++) {
     console.log('estou estudando', i)
 }
+
+
+// LAÇO FOR-IN
+const carro = {        // Object
+    cor: 'Branco',
+    qtnPortas: 4,
+    placa: 'QYE234'
+}
+
+for(let chave in carro) {       // FOR-IN
+    console.log(chave,carro.placa)
+}
+
+
+const cores = ['AZUL','AMARELO','BRANCO','VERDE']
+
+for(let indice in cores) {
+    console.log(indice,cores[indice])
+}

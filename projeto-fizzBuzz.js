@@ -16,9 +16,7 @@ function fizzBuzz(entrada) {
     } if (entrada % 3 === 0 && entrada % 5 === 0) {
         return 'FizzBuzz'
     } return entrada
-    
 } 
-
 
 //const entradas = (20)
 //console.log(entradas)

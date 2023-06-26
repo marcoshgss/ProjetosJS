@@ -5,15 +5,20 @@
 // Math.floor(num) - a saída foi 13
 // caso pontos maior que 12 -> "Carteira Suspensa"
 
-verificarVelocidade(85)
+verificarVelocidade(70)
+verificarVelocidade(79)
+verificarVelocidade(130)
 function verificarVelocidade(velocidade) {
-    if (velocidade <= 70) {
-        return 'OK'
+    const velocidadeMaxima = 70
+    const kmPorPonto = 5
+
+    if (velocidade <= velocidadeMaxima) {
+        console.log('OK')
     }
     else {
-        const pontos = Math.floor(((velocidade - 70) / 5))
+        const pontos = Math.floor(((velocidade - velocidadeMaxima) / kmPorPonto))
         if (pontos >= 12) {
-            return 'Carteira Suspensa'
+            console.log('Carteira Suspensa')
         } else {
             console.log('Pontos', pontos)
         }

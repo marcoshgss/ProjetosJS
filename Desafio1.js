@@ -125,3 +125,9 @@ const cores = ['AZUL','AMARELO','BRANCO','VERDE']
 for(let indice in cores) {
     console.log(indice,cores[indice])
 }
+
+
+// FOR-OF
+for(let cor of cores) {
+    console.log(cor)
+}

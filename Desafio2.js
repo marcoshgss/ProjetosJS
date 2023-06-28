@@ -74,17 +74,23 @@ function somar(limites) {
 
 const arrayDasNotas = [70, 70, 80]
 
-console.log(mediaDoAluno(Array))
+console.log(mediaDoAluno(arrayDasNotas))
+
 function mediaDoAluno(notas) {
-    let somar = 0
-    for (let nota in notas) {
-        somar += nota
-    }
-    const media = somar / (notas.length)
+    const media = calcularMedia(notas)
 
     if (media < 59) return 'F'
     if (media < 69) return 'D'
     if (media < 79) return 'C'
     if (media < 89) return 'B'
     return 'A'
+}
+
+
+function calcularMedia(arrayDasNotas) {
+    let somar = 0
+    for (let valor of arrayDasNotas) {
+        somar += valor
+    }
+    return somar/(arrayDasNotas.length)
 }

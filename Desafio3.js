@@ -27,7 +27,6 @@ console.log(celular1)
 
 
 // CONSTRUCTOR FUNCIONS
-
 // Pascal Case
 function Celular(marcaCelular,tamanhoTela,capacidadeBateria){
     this.marcaCelular = marcaCelular,
@@ -54,4 +53,18 @@ function Carro(fabricacao, modelo, ano, proprietario,mostreCarro) {
 
 const carro = new Carro('nacional', 'Gol', 2015, 'João Pedro', null);
 console.log(carro)
+
+
+// NATUREZA DINÂNIMA DE OBJETOS
+const teclado = {
+    cor: 'Preto',
+    marca: 'Multilaser'
+}
+
+teclado.tamanho = '60cm';
+
+delete teclado.tamanho;
+console.log(teclado)
+
+
 

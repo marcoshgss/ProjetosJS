@@ -83,3 +83,59 @@ function mostrarPostagem(postagem){
     }
 }
 mostrarPostagem(postagem)
+
+// CRIE UM OBJETO DE POSTAGEM DE BLOG 
+// Usando CONSTRUCTOR FUNCIONS
+// Pascal Case
+function Postagem(titulo, mensagem, autor){
+    this.titulo = titulo,
+    this.mensagem = mensagem,
+    this.autor = autor,
+    this.visualizacoes = 0,
+    this.comentarios = [],
+    this.estarAovivo = false
+}
+
+const post1 = new Postagem('a','b','c')
+console.log(post1)
+
+
+// CRIE UM ARRAY DE OBJETOS DE FAIXA DE PREÇO PARA QUE ELA POSSA SER USADA EM UM SITE IGUAL O MERCADO LIVRE.
+
+let faixa = [
+    {tooltip: 'até R$600', minimo: 0, maximo: 600},
+    {tooltip: 'de R$600 até R$2000', minimo: 600, maximo: 2000},
+    {tooltip: 'R$2000 ou mais', minimo: 2000, maximo: 9999999}
+];
+
+// SEGUNDA OPÇÃO (FACTORY FUNCTIONS)
+function criaFaixaPreco(tooltip, minimo,maximo) {
+    return {
+        tooltip,
+        minimo,
+        maximo
+    }
+}
+
+let faixas2 = [
+    criaFaixaPreco('x', 1 , 100),
+    criaFaixaPreco('y', 100, 1000),
+    criaFaixaPreco('z', 1000, 10000)
+]
+
+// FAZENDO COM CONSTRUCTOR FUNCTIONS
+function faixaPreco(tooltip, minimo,maximo){
+    this.tooltip = tooltip,
+    this.minimo = minimo,
+    this.maximo = maximo
+}
+
+let faixas3 = [
+    new faixaPreco('a', 10, 1000),
+    new faixaPreco('b', 200, 2000),
+    new faixaPreco('c', 3000, 30000)
+]
+
+console.log(faixa)
+console.log(faixas2)
+console.log(faixas3)

@@ -56,3 +56,23 @@ const inicio = caracteres.shift();
 console.log(inicio)
 console.log(caracteres)
 
+// MEIO
+const meio = caracteres.splice(2,1);
+console.log(meio)
+
+// FIM
+const fim = caracteres.pop();
+console.log(fim)
+console.log(caracteres)
+
+
+// COMBINAR ARRAYS (juntar os arrays)
+const caracteres1 = ['a', 'b', 'c', 'd', 'e']
+const caracteres2 = [1, 'a', 2, 'b', 3, 'c']
+
+// COMBINAR
+const combinar = caracteres1.concat(caracteres2)
+console.log(combinar)
+// DIVIDIR
+const cortado = combinar.slice(1,8);
+console.log(cortado)

@@ -76,3 +76,16 @@ console.log(combinar)
 // DIVIDIR
 const cortado = combinar.slice(1,8);
 console.log(cortado)
+
+
+// spread - método novo para combinar arrays e também clonar um array.
+const primeiro = [1,2,3]
+const segundo = [4,5,6]
+
+//combinar arrays
+const combinar2 =  [...primeiro,'%',...segundo]
+console.log(combinar2)
+
+// clonar um array
+const clonar = [...combinar2]
+console.log(clonar)

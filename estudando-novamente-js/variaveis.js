@@ -1,4 +1,4 @@
-let mensagem = "Olá, mundo!"; // String literal
+let mensagem = "Olá, mundo!";  // String literal
 console.log(mensagem);
 
 let idade = 20; // number literal

@@ -18,7 +18,29 @@ stringCounter('a', 'samara')
 
 function qtnPorcento(a, b) {
     let result = a / b;
-    console.log(a + ' equivale a ' + result * 100 +'% de ' + b);
+    console.log(a + ' equivale a ' + result * 100 + '% de ' + b);
 }
 
 qtnPorcento(50, 100);
+
+const object = {
+    nome: null,
+    sobrenome: 'Henrique',
+    idade: 22
+}
+
+// Desafio, verificar cada elemento do object, se estiver null, apague esse elemento e mostre o restante.
+function excluirItemObject(object) {
+    if (object.nome === null) {
+        delete object.nome
+    } else if (object.sobrenome === null){
+        delete object.sobrenome
+    } else if (object.idade === null){
+        delete object.idade
+    }
+    console.log(object)
+}
+
+excluirItemObject(object)
+
+

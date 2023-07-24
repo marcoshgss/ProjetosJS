@@ -66,6 +66,41 @@ const orgazinar = (objList) => {
 
 orgazinar(arrayObj)
 
+// Desafio, função que receber uma string e retorna a mesma string com as letras embaralhadas.
+
+function palavraEmbaralhada(palavra) {
+    let letrasOrdenadas = palavra.split('')
+    let letrasMisturadas = []
+
+    while (letrasOrdenadas.length) {
+        const sortearLetras = parseInt(Math.random() * letrasOrdenadas.length)
+        const letraEscolhida = letrasOrdenadas.splice(sortearLetras, 1)[0]
+        letrasMisturadas.push(letraEscolhida)
+
+    }
+    return letrasMisturadas.join('')
+}
+console.log(palavraEmbaralhada('paralelepipedo'))
+
+
 // Desafio, função que recebe um número e um array de números. Essa função deve retornar o número de array que for mais
 // próximo do primeiro número passado por parâmetro.
- 
+
+
+
+function valorMaisProximo(arr, valor) {
+    var limite = -1, valores = arr.length;
+    while (valores - limite > 1) {
+        var mid = Math.round((limite + valores)/2);
+        if (arr[mid] <= valor) {
+            limite = mid;
+        } else {
+            valores = mid;
+        }
+    }
+    if (arr[limite] == valor) valores = limite;
+    return [arr[limite], arr[valores]];
+}
+console.log(valorMaisProximo([1,2,3,4,5,6,7,8,9,10], 3))
+
+
